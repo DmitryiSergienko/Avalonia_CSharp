@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "Projects\MVVM_ListFilms\View\View.csproj", "{144287EC-87B8-40E5-A744-0CF85AEC2A27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVVM_ListFilms", "MVVM_ListFilms", "{2079C903-52AC-40B1-A6EB-14807B466E0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "Projects\MVVM_ListFilms\ViewModel\ViewModel.csproj", "{AF84400B-736D-4300-A41E-68BB87B2B5D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Projects\MVVM_ListFilms\Model\Model.csproj", "{1308086A-E9E5-4742-9FA0-13EDD9E14450}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{144287EC-87B8-40E5-A744-0CF85AEC2A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144287EC-87B8-40E5-A744-0CF85AEC2A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144287EC-87B8-40E5-A744-0CF85AEC2A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144287EC-87B8-40E5-A744-0CF85AEC2A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF84400B-736D-4300-A41E-68BB87B2B5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF84400B-736D-4300-A41E-68BB87B2B5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF84400B-736D-4300-A41E-68BB87B2B5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF84400B-736D-4300-A41E-68BB87B2B5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1308086A-E9E5-4742-9FA0-13EDD9E14450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1308086A-E9E5-4742-9FA0-13EDD9E14450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1308086A-E9E5-4742-9FA0-13EDD9E14450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1308086A-E9E5-4742-9FA0-13EDD9E14450}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{144287EC-87B8-40E5-A744-0CF85AEC2A27} = {2079C903-52AC-40B1-A6EB-14807B466E0A}
+		{AF84400B-736D-4300-A41E-68BB87B2B5D3} = {2079C903-52AC-40B1-A6EB-14807B466E0A}
+		{1308086A-E9E5-4742-9FA0-13EDD9E14450} = {2079C903-52AC-40B1-A6EB-14807B466E0A}
+	EndGlobalSection
+EndGlobal
