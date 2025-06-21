@@ -1,0 +1,51 @@
+<Window
+    Title="View_ListFilms"
+    d:DesignHeight="900"
+    d:DesignWidth="1600"
+    mc:Ignorable="d"
+    x:Class="View.MainWindow"
+    x:DataType="viewModel:ManagerMovieViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="clr-namespace:ViewModel;assembly=ViewModel"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.DataContext>
+        <viewModel:ManagerMovieViewModel />
+    </Design.DataContext>
+    <Grid Margin="10" RowDefinitions="*, Auto">
+        <ListBox
+            FontSize="32"
+            Grid.Row="0"
+            ItemsSource="{Binding Movies}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="500,100,300,100">
+                        <TextBlock Grid.Column="0" Text="{Binding Title}" />
+                        <TextBlock Grid.Column="1" Text="{Binding Year}" />
+                        <TextBlock Grid.Column="2" Text="{Binding Genre}" />
+                        <TextBlock Grid.Column="3" Text="{Binding Rating}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Grid Grid.Row="1" Margin="0,20,0,0">
+            <Button
+                Command="{Binding ToPreviousPage}"
+                Content="Previous Page"
+                FontSize="32"
+                HorizontalAlignment="Left"
+                Margin="40,0,0,0" />
+            <TextBlock
+                FontSize="32"
+                HorizontalAlignment="Center"
+                Text="{Binding CurrentPage}" />
+            <Button
+                Command="{Binding ToNextPage}"
+                Content="Next Page"
+                FontSize="32"
+                HorizontalAlignment="Right"
+                Margin="0,0,40,0" />
+        </Grid>
+    </Grid>
+</Window>

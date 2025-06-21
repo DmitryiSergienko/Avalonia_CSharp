@@ -1,0 +1,29 @@
+<Window
+    Background="Black"
+    FontSize="32"
+    Title="Window1"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="View.MainWindow"
+    x:DataType="viewModel:ChangeLanguageViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="clr-namespace:ViewModel;assembly=ViewModel"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid
+        Height="300"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Width="500">
+        <StackPanel HorizontalAlignment="Left">
+            <ComboBox
+                ItemsSource="{Binding ChoiceLanguage}"
+                Margin="0,50"
+                SelectedItem="{Binding SelectedLanguage}"
+                Width="200" />
+            <TextBlock Text="{Binding TextHello}" />
+        </StackPanel>
+    </Grid>
+</Window>

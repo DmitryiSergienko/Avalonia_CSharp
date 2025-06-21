@@ -4,6 +4,23 @@
     <option name="projectPerEditor">
       <map>
         <entry key="Projects/MVVM_ListFilms/View/App.axaml" value="Projects/MVVM_ListFilms/View/View.csproj" />
+        <entry key="Projects/MVVM_ListFilms/View/MainWindow.axaml" value="Projects/MVVM_ListFilms/View/View.csproj" />
+        <entry key="Projects/MVVM_ListFilms/View_ListFilms/App.axaml" value="Projects/MVVM_ListFilms/View_ListFilms/View_ListFilms.csproj" />
+        <entry key="Projects/MVVM_ListFilms/View_ListFilms/MainWindow.axaml" value="Projects/MVVM_ListFilms/View_ListFilms/View_ListFilms.csproj" />
+        <entry key="Projects/Practice1_ChangeLanguage/View/MainWindow.axaml" value="Projects/Practice1_ChangeLanguage/View/View.csproj" />
+        <entry key="Projects/Practice1_ChangeLanguage/View_ChangeLanguage/App.axaml" value="Projects/Practice1_ChangeLanguage/View_ChangeLanguage/View_ChangeLanguage.csproj" />
+        <entry key="Projects/Practice1_ChangeLanguage/View_ChangeLanguage/MainWindow.axaml" value="Projects/Practice1_ChangeLanguage/View_ChangeLanguage/View_ChangeLanguage.csproj" />
+        <entry key="Projects/Practice1_ChangeLanguage/View_ChangeLanguage/Window1.axaml" value="Projects/Practice1_ChangeLanguage/View_ChangeLanguage/View_ChangeLanguage.csproj" />
+        <entry key="Projects/Practice2_ExchangeRate/View_ExchangeRate/App.axaml" value="Projects/Practice2_ExchangeRate/View_ExchangeRate/View_ExchangeRate.csproj" />
+        <entry key="Projects/Practice2_ExchangeRate/View_ExchangeRate/MainWindow.axaml" value="Projects/Practice2_ExchangeRate/View_ExchangeRate/View_ExchangeRate.csproj" />
+        <entry key="Projects/Practice2_ExchangeRates/View_ExchangeRates/App.axaml" value="Projects/Practice2_ExchangeRates/View_ExchangeRates/View_ExchangeRates.csproj" />
+        <entry key="Projects/Practice2_ExchangeRates/View_ExchangeRates/MainWindow.axaml" value="Projects/Practice2_ExchangeRates/View_ExchangeRates/View_ExchangeRates.csproj" />
+        <entry key="Projects/UserControl_SwitchingPages/UserControl/App.axaml" value="Projects/UserControl_SwitchingPages/UserControl/UserControl.csproj" />
+        <entry key="Projects/UserControl_SwitchingPages/UserControl/Views/MainWindow.axaml" value="Projects/UserControl_SwitchingPages/UserControl/UserControl.csproj" />
+        <entry key="Projects/UserControl_SwitchingPages/UserControl/Views/Pages/FirstPage.axaml" value="Projects/UserControl_SwitchingPages/UserControl/UserControl.csproj" />
+        <entry key="Projects/UserControl_SwitchingPages/UserControl/Views/Pages/SecondPage.axaml" value="Projects/UserControl_SwitchingPages/UserControl/UserControl.csproj" />
+        <entry key="Projects/UserControl_SwitchingPages/UserControl/Views/Pages/ThirdPage.axaml" value="Projects/UserControl_SwitchingPages/UserControl/UserControl.csproj" />
+        <entry key="View_ExchangeRate/MainWindow.axaml" value="View_ExchangeRate/View_ExchangeRate.csproj" />
       </map>
     </option>
   </component>

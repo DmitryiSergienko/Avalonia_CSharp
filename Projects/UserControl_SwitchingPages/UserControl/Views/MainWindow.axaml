@@ -1,0 +1,56 @@
+<Window
+    FontSize="32"
+    Icon="/Assets/avalonia-logo.ico"
+    Title="UserControl"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="UserControl.Views.MainWindow"
+    x:DataType="vm:MainWindowViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:factories="clr-namespace:UserControl.Views.Factories"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:reactiveUi="http://reactiveui.net"
+    xmlns:vm="using:UserControl.ViewModels"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Grid RowDefinitions="*, Auto">
+        <reactiveUi:RoutedViewHost
+            Grid.Row="0"
+            PageTransition="{x:Null}"
+            Router="{Binding Path=Router}">
+            <reactiveUi:RoutedViewHost.ViewLocator>
+                <factories:FactoryPageView />
+            </reactiveUi:RoutedViewHost.ViewLocator>
+        </reactiveUi:RoutedViewHost>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button
+                Command="{Binding Path=MyGoBack}"
+                Content="Go Back"
+                Margin="10,0" />
+            <Button
+                Command="{Binding Path=MyFirstPage}"
+                Content="Go to First Page"
+                Margin="0,0,10,0" />
+            <Button
+                Command="{Binding Path=MySecondPage}"
+                Content="Go to Second Page"
+                Margin="0,0,10,0" />
+            <Button
+                Command="{Binding Path=MyThirdPage}"
+                Content="Go to Third Page"
+                Margin="0,0,10,0" />
+            <Button
+                Command="{Binding Path=GoForward}"
+                Content="Go Forward"
+                Margin="0,0,10,0" />
+        </StackPanel>
+    </Grid>
+
+</Window>

@@ -1,0 +1,92 @@
+<Window
+    Background="Black"
+    FontSize="32"
+    Height="700"
+    Title="View_ExchangeRate"
+    Width="1200"
+    d:DesignHeight="700"
+    d:DesignWidth="1200"
+    mc:Ignorable="d"
+    x:Class="View_ExchangeRates.MainWindow"
+    x:DataType="viewModel:MainViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="clr-namespace:ViewModel;assembly=ViewModel"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel VerticalAlignment="Center" Width="1000">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <ComboBox
+                    ItemsSource="{Binding NameFromListRates}"
+                    Margin="10"
+                    PlaceholderForeground="#666"
+                    PlaceholderText="Исходная"
+                    SelectedItem="{Binding SelectedFromRate}"
+                    Width="300" />
+                <ComboBox
+                    ItemsSource="{Binding NameFromListRates}"
+                    Margin="10"
+                    PlaceholderForeground="#666"
+                    PlaceholderText="Целевая"
+                    SelectedItem="{Binding SelectedToRate}"
+                    Width="300" />
+                <TextBox
+                    Margin="10"
+                    Text="{Binding AmountOfMoney}"
+                    Watermark="Введите сумму"
+                    Width="340" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    Background="#444"
+                    Margin="10"
+                    Padding="6"
+                    Text="{Binding ResultOfMoney}"
+                    Width="620" />
+                <Button
+                    Command="{Binding TakeResult}"
+                    Content="Конвертировать"
+                    Margin="10"
+                    Width="340" />
+            </StackPanel>
+        </StackPanel>
+        <Grid
+            Background="#666"
+            ColumnDefinitions="*,*,*"
+            Margin="0,0,0,2">
+            <TextBlock
+                FontWeight="Bold"
+                Grid.Column="0"
+                Text="Code"
+                VerticalAlignment="Center" />
+            <TextBlock
+                FontWeight="Bold"
+                Grid.Column="1"
+                Text="Name"
+                VerticalAlignment="Center" />
+            <TextBlock
+                FontWeight="Bold"
+                Grid.Column="2"
+                Text="Rate (к USD)"
+                VerticalAlignment="Center" />
+        </Grid>
+
+        <ListBox ItemsSource="{Binding ListRatesFromContent}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*" Margin="0,1">
+                        <TextBlock Grid.Column="0" Text="{Binding Code}" />
+                        <TextBlock Grid.Column="1" Text="{Binding Name}" />
+                        <TextBlock Grid.Column="2" Text="{Binding Rate}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>
